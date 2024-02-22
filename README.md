@@ -24,7 +24,7 @@ database.
 The logical model incorporates the fields identified in the conceptual model with the addition of foreign keys to allow for the joining of data. 
 
 Some additional notes about why the models are designed this way:
-* Focused on using a OLTP database design approach, prioritizing the normalization of data
+* Focused on using an OLTP database design approach, prioritizing the normalization of data
 * Refrained from including calculated fields in database to increase the performance and processing speed 
 *	Avoided many to many relationships as it may result in duplication with joining or other errors when attempting to query and analyze the data
 * Ensured referential integrity – each foreign key maps to a unique primary key in another table
