@@ -33,4 +33,5 @@ Some additional notes about why the models are designed this way:
 Jupyter notebook was used for the entirety of this project, including the creation and manipulation of the database tables.
 
 Accident_Analysis_P1 imports and cleans the data as well as instantiates the database tables.
+
 Accident_Analysis_P2 retrieves information from the database tables and showcases an analysis of the accident data.
