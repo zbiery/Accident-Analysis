@@ -5,7 +5,7 @@ The purpose of this project was to learn how to clean and manipulate data using 
 database using SQL DDL (database design language) to store the data, query using SQL DML, (database manipulation language)
 and create insights through plotting with matplotlib & seaborn.
 
-The first step of this project involved designing a database structure to efficiently store the data contain in 
+The first step of this project involved designing a database structure to efficiently store the data contained in 
 vehicle_accidents.xlsx. To do so, a conceptual and logical model were developed to guide the implementation of a 
 relational database. 
 
