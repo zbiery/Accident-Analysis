@@ -3,7 +3,7 @@
 ## Project Description ##
 
 Conceptual Model (ERD)
- ![alt](https://github.com/zbiery/Accident-Analysis/blob/conceptual-model.jpg?raw=true)
+ ![alt](https://github.com/zbiery/Accident-Analysis/conceptual-model.jpg?raw=true)
 
 
 Logical Model (Relational Schema)
