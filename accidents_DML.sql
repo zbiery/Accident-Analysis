@@ -1,18 +1,15 @@
+--join crashes, people, and injuries
 SELECT * FROM final.Crashes c
 INNER JOIN final.People p
 ON c.CrashID = p.CrashID
 INNER JOIN final.Injuries i 
 ON p.PersonID = i.PersonID
 
-
-SELECT * FROM final.People
-
+--join injuries and injury areas
 SELECT i.InjuryID, i.PersonID, a.InjuryArea, i.Severity
 FROM final.Injuries i
 INNER JOIN final.InjuryAreas a
 ON i.InjuryAreaID = a.InjuryAreaID
-
-SELECT * FROM final.InjuryAreas
 
 --most common injury areas (frequency distribution)
 SELECT InjuryArea, COUNT(*) AS NumInjuries
@@ -21,7 +18,6 @@ GROUP BY InjuryArea
 ORDER BY NumInjuries DESC;
 
 --most common injury areas by death
-
 SELECT a.InjuryArea, COUNT(*) AS NumFatalities
 FROM final.Injuries i
 INNER JOIN final.InjuryAreas a
@@ -30,6 +26,7 @@ WHERE i.Severity = 'Fatal'
 GROUP BY a.InjuryArea
 ORDER BY NumFatalities DESC;
 
+--Number of Injuries by Area
 SELECT SUM(NumInjuries) AS Total FROM
 (
 SELECT InjuryArea, COUNT(*) AS NumInjuries
@@ -38,7 +35,7 @@ GROUP BY InjuryArea
 --ORDER BY NumInjuries DESC;
 ) AS SumSub
 
-
+--Crashes by age
 SELECT Age, COUNT(CrashID) AS TotalCrashes
 FROM final.People
 GROUP BY Age
