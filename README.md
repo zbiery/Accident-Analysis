@@ -2,7 +2,7 @@
 
 This repo contains files relevant to a project completed for analyzing vehicle accident data.
 The purpose of this project was to learn how to clean and manipulate data using pandas, create a relational 
-database using SQL DDL (database design language) to store the data, query using SQL DML, (database manipulation language)
+database using SQL DDL (database design language), query using SQL DML, (database manipulation language)
 and create insights through plotting with matplotlib & seaborn.
 
 The first step of this project involved designing a database structure to efficiently store the data contained in 
