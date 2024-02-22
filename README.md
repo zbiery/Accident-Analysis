@@ -3,7 +3,7 @@
 ## Project Description ##
 
 Conceptual Model (ERD)
- ![Alt text]("C:\Users\Zbier\OneDrive\Documents\2023-2024\Data MGMT\Python\Final Project\logical-model.jpg"?raw=true "ERD")
+ ![alt text](https://github.com/zbiery/Accident-Analysis/blob/conceptual-model.jpg?raw=true)
 When we first approached this problem, we noticed that the fields given in the original data fit into 3 broad categories: (1) Crash specific information such as ‘CRASH_DATE’ and ‘CRASH_TIME, (2) Demographic information such as ‘PERSON_AGE’, ‘PERSON_SEX’ and ‘INJURY_PERSON_TYPE’, and (3) Injury information such as ‘INJURY_AREA’ and ‘INJURY_RESULT.’ We decided to model each of these categories as its own table in our conceptual model. 
 This served as a basic outline for our conceptual model; however, our team also made some assumptions about the data that further shaped our model:
 1.	Each instance of the same combination of ‘CRASH_DATE’ & ‘CRASH_TIME’ identifies the same crash – each record containing the same ‘CRASH_DATE’ & ‘CRASH_TIME’ is the same crash
