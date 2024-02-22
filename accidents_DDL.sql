@@ -1,5 +1,7 @@
---Create schema for tables
+RETURN;
 
+--Create schema for tables
+CREATE SCHEMA final;
 
 --Create Crashes Table
 CREATE TABLE final.Crashes (
